@@ -1,0 +1,23 @@
+predicates
+  orangtua(symbol) - nondeterm (o)
+  anak(symbol) - nondeterm (o)
+  angka(symbol) - nondeterm (o)
+  keluarga(symbol,symbol,symbol,symbol) - nondeterm (o,o,o,o)
+
+clauses
+  orangtua(meidy).
+  orangtua(aini).
+  orangtua(bambang).
+  orangtua(shinta).
+  
+  angka(satu).
+  angka(dua).
+
+  anak(udin).
+  anak(gusti).
+
+  keluarga(satu,meidy,aini,udin).
+  keluarga(dua,bambang,shinta,gusti).
+
+goal
+  keluarga(_,Orangtua,Istri,Anak).
